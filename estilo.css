@@ -1,0 +1,96 @@
+button {
+    background-color: #000;
+    border:2px solid #000;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 20px;
+   
+    
+}
+body {
+    background-image: linear-gradient( to bottom, rgb(17, 0, 255), rgb(0, 102, 255),  rgba(0, 255, 85, 0.432),rgba(0, 128, 53, 0.726));
+ 
+    background-color: indigo; 
+    height: 700px;
+    width: 1300px;
+  
+    
+}
+
+h1{ background-color: cyan; 
+    border:5px solid #000;
+    height: 50px;
+    width: 312px;
+
+
+}
+button:hover{
+    background-color: grey;
+    transition: 0.5s;
+    opacity:2 ;
+    cursor: pointer;
+    
+
+
+}
+div{
+    border:3px solid #000;
+    height: 480px;
+    max-width: 322px;
+    background-color:cornflowerblue; 
+    margin: 0 auto;
+    border-radius: 10px;
+    background-image: linear-gradient(red,blue,green);
+    
+
+}
+
+
+
+
+@font-face{
+        font-family: 'gothic';
+        src: url('Cursive.ttf')format('truetype')
+}
+        
+h2{
+    font-family: 'gothic';
+    text-align: center;
+    font-size: 25px;
+    color: aqua;
+}
+
+.button1{
+    background-color:red;
+    
+}
+.button1:hover{
+    background-color: darkred;
+    transition: 0.5s;
+    opacity:2 ;
+    cursor: pointer;
+
+}
+.button2{
+    background-color:forestgreen;
+}
+.button2:hover{
+    background-color: darkgreen;
+    transition: 0.5s;
+    opacity:2 ;
+    cursor: pointer;
+
+}
+.button3{
+    background-color: yellow;
+    color: black;
+}
+.button3:hover{
+    background-color: rgba(255, 153, 0, 0.986);
+    transition: 0.5s;
+    opacity:2 ;
+    cursor: pointer;
+}
