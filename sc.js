@@ -31,7 +31,7 @@ function limpar(){
     limite=0;
     limiteP=0;
     if(sound==1){
-        let music = new Audio('click.mp3')
+        let music = new Audio('files/click.mp3')
         music.play();}
 
     
@@ -51,7 +51,7 @@ function um(){
         bloqueio2=1;
         ++limite;
         if(sound==1){
-        let music = new Audio('click.mp3')
+        let music = new Audio('files/click.mp3')
         music.play();}
         }
     
@@ -70,7 +70,7 @@ function dois(){
         bloqueio2=1;
         ++limite;
         if(sound==1){
-            let music = new Audio('click.mp3')
+            let music = new Audio('files/click.mp3')
             music.play();}}
 
     
@@ -88,7 +88,7 @@ function tres(){
         bloqueio2=1;
         ++limite; 
         if(sound==1){
-            let music = new Audio('click.mp3')
+            let music = new Audio('files/click.mp3')
             music.play();}}
 
     
@@ -106,7 +106,7 @@ function quatro(){
         bloqueio2=1;
         ++limite; 
         if(sound==1){
-            let music = new Audio('click.mp3')
+            let music = new Audio('files/click.mp3')
             music.play();}}
 
     
@@ -124,7 +124,7 @@ function cinco(){
         bloqueio2=1;
         ++limite; 
         if(sound==1){
-            let music = new Audio('click.mp3')
+            let music = new Audio('files/click.mp3')
             music.play();}}
 
     
@@ -142,7 +142,7 @@ function seis(){
         bloqueio2=1;
         ++limite; 
         if(sound==1){
-            let music = new Audio('click.mp3')
+            let music = new Audio('files/click.mp3')
             music.play();}}
 
     
@@ -160,7 +160,7 @@ function sete(){
         bloqueio2=1;
         ++limite; 
         if(sound==1){
-            let music = new Audio('click.mp3')
+            let music = new Audio('files/click.mp3')
             music.play();}}
 
     
@@ -178,7 +178,7 @@ function oito(){
         bloqueio2=1;
         ++limite; 
         if(sound==1){
-            let music = new Audio('click.mp3')
+            let music = new Audio('files/click.mp3')
             music.play();}}
 
     
@@ -196,7 +196,7 @@ function nove(){
         bloqueio2=1;
         ++limite; 
         if(sound==1){
-            let music = new Audio('click.mp3')
+            let music = new Audio('files/click.mp3')
             music.play();}}
 
     
@@ -214,7 +214,7 @@ function zero(){
         bloqueio2=1;
         ++limite; 
         if(sound==1){
-            let music = new Audio('click.mp3')
+            let music = new Audio('files/click.mp3')
             music.play();}}
 
     
@@ -229,7 +229,7 @@ function ponto(){
             bloqueio2=1;
             ++limiteP; 
             if(sound==1){
-                let music = new Audio('click.mp3')
+                let music = new Audio('files/click.mp3')
                 music.play();}}}
 
     
@@ -239,7 +239,7 @@ function ponto(){
 
 function mais(){
     if(sound==1){
-        let music = new Audio('click.mp3')
+        let music = new Audio('files/click.mp3')
         music.play();}
     if (bloqueio2==1){
         num_1=parseFloat(document.getElementById("display").innerHTML);
@@ -260,7 +260,7 @@ function mais(){
 }
 function menos(){
     if(sound==1){
-        let music = new Audio('click.mp3')
+        let music = new Audio('files/click.mp3')
         music.play();}
     if (bloqueio2==1){
         num_1=parseFloat(document.getElementById("display").innerHTML);
@@ -276,7 +276,7 @@ function menos(){
 
 function mult(){
     if(sound==1){
-        let music = new Audio('click.mp3')
+        let music = new Audio('files/click.mp3')
         music.play();}
     if (bloqueio2==1){
    
@@ -292,7 +292,7 @@ function mult(){
 }
 function dividir(){
     if(sound==1){
-        let music = new Audio('click.mp3')
+        let music = new Audio('files/click.mp3')
         music.play();}
     if(bloqueio2==1){
     num_1=parseFloat(document.getElementById("display").innerHTML);
@@ -308,7 +308,7 @@ function dividir(){
 
 function igual(){
     if(sound==1){
-        let music = new Audio('click.mp3')
+        let music = new Audio('files/click.mp3')
         music.play();}
     if (bloqueio==1){
         let num_2=parseFloat(document.getElementById("display").innerHTML);
