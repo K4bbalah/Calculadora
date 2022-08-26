@@ -30,7 +30,7 @@ body {
 h1{ background-color: cyan; 
     border:5px solid #000;
     height: 50px;
-    width: 312px;
+    width: 18ch;
     font-family:'LCD';
     font-size: 34px;
     overflow:hidden;
