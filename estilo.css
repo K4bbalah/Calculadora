@@ -16,7 +16,7 @@ body {
     background-attachment: fixed;
     background-color: indigo; 
     max-height: 10px;
-    max-width: 350px;
+    max-width: 700px;
     
   
     
@@ -46,7 +46,7 @@ div{
     margin: 0 auto;
     border-radius: 10px;
     background-image: linear-gradient(red,blue,green);
-    zoom:75%;
+    zoom: 170%;
 
 }
 
