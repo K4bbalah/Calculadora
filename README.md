@@ -1,3 +1,3 @@
 # Calculadora
 Calculadora simples
- /* melhor visualização no mobile *\
+ /* melhor visualização no mobile */
