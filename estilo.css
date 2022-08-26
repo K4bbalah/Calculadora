@@ -23,7 +23,7 @@ body {
 }
 @font-face{
     font-family: 'LCD';
-    src: url('lcd.TTF')format('truetype')
+    src: url('files/lcd.TTF')format('truetype')
 }
 
 h1{ background-color: cyan; 
@@ -62,7 +62,7 @@ div{
 
 @font-face{
         font-family: 'gothic';
-        src: url('Cursive.ttf')format('truetype')
+        src: url('files/Cursive.ttf')format('truetype')
 }
         
 h2{
