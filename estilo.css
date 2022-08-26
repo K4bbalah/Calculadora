@@ -14,8 +14,6 @@ body {
     background-image: linear-gradient( to bottom, rgb(17, 0, 255), rgb(0, 102, 255),  rgba(0, 255, 85, 0.432),rgba(0, 128, 53, 0.726));
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 620px;
-    width: 1300px;
     background-color: indigo; 
     
   
@@ -46,7 +44,7 @@ div{
     margin: 0 auto;
     border-radius: 10px;
     background-image: linear-gradient(red,blue,green);
-    
+    zoom:75%;
 
 }
 
