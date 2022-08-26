@@ -21,7 +21,7 @@ function som(){
 }
 function limpar(){
 
-    let limpar="";
+    let limpar="0";
     document.getElementById("display").innerHTML =limpar;
     operador=0;
     num_1=0;
