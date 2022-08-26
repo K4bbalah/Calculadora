@@ -15,6 +15,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: indigo; 
+    max-height: 10px;
+    max-width: 350px;
     
   
     
