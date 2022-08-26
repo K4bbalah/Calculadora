@@ -16,7 +16,7 @@ body {
     background-attachment: fixed;
     background-color: indigo; 
     max-height: 10px;
-    max-width: 560px;
+    max-width: 660px;
     
   
     
@@ -46,7 +46,7 @@ div{
     margin: 0 auto;
     border-radius: 10px;
     background-image: linear-gradient(red,blue,green);
-    zoom: 170%;
+    zoom: 200%;
 
 }
 
@@ -63,6 +63,7 @@ h2{
     text-align: center;
     font-size: 25px;
     color: aqua;
+    zoom:170%;
 }
 
 .button1{
