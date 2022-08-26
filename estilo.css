@@ -12,6 +12,8 @@ button {
 }
 body {
     background-image: linear-gradient( to bottom, rgb(17, 0, 255), rgb(0, 102, 255),  rgba(0, 255, 85, 0.432),rgba(0, 128, 53, 0.726));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
  
     background-color: indigo; 
     height: 620px;
@@ -38,7 +40,7 @@ button:hover{
 }
 div{
     border:3px solid #000;
-    height: 480px;
+    height: 490px;
     max-width: 322px;
     background-color:cornflowerblue; 
     margin: 0 auto;
