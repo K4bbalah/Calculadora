@@ -6,6 +6,7 @@ var bloqueio2=0;
 var limite=0;
 var limiteP=0;
 var sound=0;
+var mais_menos=0;
 
 
 function som(){
@@ -30,6 +31,7 @@ function limpar(){
     bloqueio2=0;
     limite=0;
     limiteP=0;
+    mais_menos=0;
     if(sound==1){
         let music = new Audio('files/click.mp3')
         music.play();}
@@ -37,7 +39,21 @@ function limpar(){
     
 }
 
-
+function MN(){
+    if(limite<17){
+        if(bloqueio2==1){
+            if(mais_menos==0){
+                let x=document.getElementById("display").innerHTML;
+                document.getElementById("display").innerHTML = -x;
+                ++mais_menos;}
+                else{
+                    let x=document.getElementById("display").innerHTML;
+                    document.getElementById("display").innerHTML = -x;
+                    --mais_menos;}
+            }
+        ++limite;}
+}
+ 
 
 function um(){
     if(limite<17){
