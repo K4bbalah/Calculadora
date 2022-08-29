@@ -346,8 +346,8 @@ function igual(){
                 break;
             case 2:
                 result=num_1-num_2;
-                let res=String(result);
-                document.getElementById("display").innerHTML = res.substr(0,15);
+                let res1=String(result);
+                document.getElementById("display").innerHTML = res1.substr(0,15);
                 operador=0;
                 bloqueio=0;
                 limite=0;
@@ -355,8 +355,8 @@ function igual(){
                 break;
             case 3:
                 result=num_1*num_2;
-                let res=String(result);
-                document.getElementById("display").innerHTML = res.substr(0,15);
+                let res2=String(result);
+                document.getElementById("display").innerHTML = res2.substr(0,15);
                 operador=0;
                 bloqueio=0;
                 limite=0;
@@ -365,8 +365,8 @@ function igual(){
                 break;
             case 4:
                 result=num_1/num_2;
-                let res=String(result);
-                document.getElementById("display").innerHTML = res.substr(0,15);
+                let res3=String(result);
+                document.getElementById("display").innerHTML = res3.substr(0,15);
                 operador=0;
                 bloqueio=0;
                 limite=0;
