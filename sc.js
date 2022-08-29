@@ -47,7 +47,8 @@ function MN(){
         if(bloqueio2==1){
             if(mais_menos==0){
                 let x=document.getElementById("display").innerHTML;
-                document.getElementById("display").innerHTML = -x;
+                let y="-";
+                document.getElementById("display").innerHTML = y+x;
                 ++mais_menos;
                 ++limite;}
                 else{
