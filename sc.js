@@ -41,6 +41,9 @@ function limpar(){
 
 function MN(){
     if(limite<17){
+        if(sound==1){
+        let music = new Audio('files/click.mp3')
+        music.play();}
         if(bloqueio2==1){
             if(mais_menos==0){
                 let x=document.getElementById("display").innerHTML;
