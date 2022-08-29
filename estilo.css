@@ -95,7 +95,7 @@ h2{
     opacity:2 ;
     cursor: pointer;
 }
-.display{
+@media screen and (max-width:768px){.display{
         text-align:center;
         border:3px solid #000;
         height: 480px;
@@ -108,4 +108,4 @@ h2{
         background-image: linear-gradient(red,blue,green);
 
 
-}
+    }}
