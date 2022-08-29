@@ -45,13 +45,14 @@ function MN(){
             if(mais_menos==0){
                 let x=document.getElementById("display").innerHTML;
                 document.getElementById("display").innerHTML = -x;
-                ++mais_menos;}
+                ++mais_menos;
+                ++limite;}
                 else{
                     let x=document.getElementById("display").innerHTML;
                     document.getElementById("display").innerHTML = -x;
-                    --mais_menos;}
-            }
-        ++limite;}
+                    --mais_menos;
+                --limite;}
+            }}
 }
  
 
