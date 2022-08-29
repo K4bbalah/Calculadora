@@ -40,7 +40,7 @@ function limpar(){
 }
 
 function MN(){
-    if(limite<17){
+    if(limite<16){
         if(sound==1){
         let music = new Audio('files/click.mp3')
         music.play();}
@@ -60,7 +60,7 @@ function MN(){
  
 
 function um(){
-    if(limite<17){
+    if(limite<15){
         if (bloqueio==0){
             let num="";
             document.getElementById("display").innerHTML = num;}
@@ -79,7 +79,7 @@ function um(){
 
 
 function dois(){
-    if(limite<17){
+    if(limite<15){
         if (bloqueio==0){
             let num="";
             document.getElementById("display").innerHTML = num;}
@@ -97,7 +97,7 @@ function dois(){
 }
 
 function tres(){
-    if(limite<17){
+    if(limite<15){
         if (bloqueio==0){
             let num="";
             document.getElementById("display").innerHTML = num;}
@@ -115,7 +115,7 @@ function tres(){
 }
 
 function quatro(){
-    if(limite<17){
+    if(limite<15){
         if (bloqueio==0){
             let num="";
             document.getElementById("display").innerHTML = num;}
@@ -133,7 +133,7 @@ function quatro(){
 }
 
 function cinco(){
-    if(limite<17){
+    if(limite<15){
         if (bloqueio==0){
             let num="";
             document.getElementById("display").innerHTML = num;}
@@ -151,7 +151,7 @@ function cinco(){
 }
 
 function seis(){
-    if(limite<17){
+    if(limite<15){
         if (bloqueio==0){
             let num="";
             document.getElementById("display").innerHTML = num;}
@@ -169,7 +169,7 @@ function seis(){
 }
 
 function sete(){
-    if(limite<17){
+    if(limite<15){
         if (bloqueio==0){
             let num="";
             document.getElementById("display").innerHTML = num;}
@@ -187,7 +187,7 @@ function sete(){
 }
 
 function oito(){
-    if(limite<17){
+    if(limite<15){
         if (bloqueio==0){
             let num="";
             document.getElementById("display").innerHTML = num;}
@@ -205,7 +205,7 @@ function oito(){
 }
 
 function nove(){
-    if(limite<17){
+    if(limite<15){
         if (bloqueio==0){
             let num="";
             document.getElementById("display").innerHTML = num;}
@@ -223,7 +223,7 @@ function nove(){
 }
 
 function zero(){
-    if(limite<17){
+    if(limite<15){
         if (bloqueio==0){
             let num="";
             document.getElementById("display").innerHTML = num;}
@@ -336,7 +336,7 @@ function igual(){
             case 1:
                 result=num_1+num_2;
                 let res=String(result);
-                document.getElementById("display").innerHTML = res.substr(0,14);
+                document.getElementById("display").innerHTML = res.substr(0,15);
                 operador=0;
                 bloqueio=0;
                 limite=0;
@@ -346,7 +346,8 @@ function igual(){
                 break;
             case 2:
                 result=num_1-num_2;
-                document.getElementById("display").innerHTML = result;
+                let res=String(result);
+                document.getElementById("display").innerHTML = res.substr(0,15);
                 operador=0;
                 bloqueio=0;
                 limite=0;
@@ -354,7 +355,8 @@ function igual(){
                 break;
             case 3:
                 result=num_1*num_2;
-                document.getElementById("display").innerHTML = result;
+                let res=String(result);
+                document.getElementById("display").innerHTML = res.substr(0,15);
                 operador=0;
                 bloqueio=0;
                 limite=0;
@@ -363,7 +365,8 @@ function igual(){
                 break;
             case 4:
                 result=num_1/num_2;
-                document.getElementById("display").innerHTML = result;
+                let res=String(result);
+                document.getElementById("display").innerHTML = res.substr(0,15);
                 operador=0;
                 bloqueio=0;
                 limite=0;
