@@ -335,7 +335,8 @@ function igual(){
         switch (operador){
             case 1:
                 result=num_1+num_2;
-                document.getElementById("display").innerHTML = result;
+                let res=String(result);
+                document.getElementById("display").innerHTML = res.substr(0,14);
                 operador=0;
                 bloqueio=0;
                 limite=0;
