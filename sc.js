@@ -40,7 +40,7 @@ function limpar(){
 }
 
 function MN(){
-    if(limite<16){
+    if(limite<17){
         if(sound==1){
         let music = new Audio('files/click.mp3')
         music.play();}
