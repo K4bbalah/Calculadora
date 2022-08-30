@@ -54,10 +54,9 @@ button:hover{
         src: url('files/Cursive.ttf')format('truetype')
 }
         
-}
 
 .button1{
-    background-color: Crimson;
+    background-color: crimson;
     
 }
 .button1:hover{
