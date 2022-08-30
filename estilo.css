@@ -54,12 +54,6 @@ button:hover{
         src: url('files/Cursive.ttf')format('truetype')
 }
         
-h2{
-    font-family: 'gothic';
-    text-align: center;
-    font-size: 25px;
-    color: aqua;
-    zoom:170%;
 }
 
 .button1{
@@ -94,6 +88,13 @@ h2{
     cursor: pointer;
 }
 @media screen and (min-width:960px){
+        h2{
+            font-family: 'gothic';
+            text-align: center;
+            font-size: 25px;
+            color: aqua;
+            zoom:140%;
+    }
         .display{
         text-align:center;
         border:3px solid #000;
@@ -108,6 +109,13 @@ h2{
 
     }}
 @media screen and (max-width:1080px){
+    h2{
+    font-family: 'gothic';
+    text-align: center;
+    font-size: 25px;
+    color: aqua;
+    zoom:200%;
+    }
     .display{
         text-align:center;
         border:3px solid #000;
