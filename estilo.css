@@ -93,7 +93,7 @@ h2{
     opacity:2 ;
     cursor: pointer;
 }
-div2{
+.display{
         text-align:center;
         border:3px solid #000;
         height: 480px;
@@ -114,7 +114,7 @@ div2{
     background-color: indigo;
     max-height: 10px;
     max-width: 840px;
-        div2{
+        .display{
             text-align:center;
             border:3px solid #000;
             height: 480px;
