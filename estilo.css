@@ -93,7 +93,8 @@ h2{
     opacity:2 ;
     cursor: pointer;
 }
-.display{
+@media screen and (min-width:960px){
+        .display{
         text-align:center;
         border:3px solid #000;
         height: 480px;
