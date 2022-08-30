@@ -1,5 +1,5 @@
 # Calculadora
 Calculadora simples
- /* melhor visualização no mobile */
 
-![Captura de tela 2022-08-26 143015](https://user-images.githubusercontent.com/97350510/186960400-f1a47a15-a008-44ae-a026-83063dfa4e98.png)
+![Captura de tela 2022-08-29 222716](https://user-images.githubusercontent.com/97350510/187327866-2a5cb41e-2ec6-487d-a6e4-aae9c7ca02db.png)
+
