@@ -254,9 +254,8 @@ function zero(){
 }
 function ponto(){
     if(limite<15){
-        if(bloqueio2==1){
+        if(bloqueio3==1){
             if(limiteP<1){
-                if(bloqueio2==1){
                     let num=document.getElementById("display").innerHTML;
                     let btn_valor=document.getElementById("ponto").value;
                     document.getElementById("display").innerHTML = num+btn_valor;
