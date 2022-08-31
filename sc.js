@@ -8,6 +8,7 @@ var limiteP=0;
 var sound=0;
 var mais_menos=0;
 var tempo=1;
+var bloqueio3=0;
 
 
 function som(){
@@ -33,6 +34,7 @@ function limpar(){
     limite=0;
     limiteP=0;
     mais_menos=0;
+    bloqueio3=0;
     if(sound==1){
         let music = new Audio('files/click.mp3')
         music.play();}
@@ -71,6 +73,7 @@ function um(){
         bloqueio=1;
         bloqueio2=1;
         ++limite;
+        bloqueio3=1;
         if(sound==1){
         let music = new Audio('files/click.mp3')
         music.play();}
@@ -90,6 +93,7 @@ function dois(){
         bloqueio=1;
         bloqueio2=1;
         ++limite;
+        bloqueio3=1;
         if(sound==1){
             let music = new Audio('files/click.mp3')
             music.play();}}
@@ -107,7 +111,8 @@ function tres(){
         document.getElementById("display").innerHTML = num+btn_valor;
         bloqueio=1;
         bloqueio2=1;
-        ++limite; 
+        ++limite;
+        bloqueio3=1;
         if(sound==1){
             let music = new Audio('files/click.mp3')
             music.play();}}
@@ -125,7 +130,8 @@ function quatro(){
         document.getElementById("display").innerHTML = num+btn_valor;
         bloqueio=1;
         bloqueio2=1;
-        ++limite; 
+        ++limite;
+        bloqueio3=1;
         if(sound==1){
             let music = new Audio('files/click.mp3')
             music.play();}}
@@ -143,7 +149,8 @@ function cinco(){
         document.getElementById("display").innerHTML = num+btn_valor;
         bloqueio=1;
         bloqueio2=1;
-        ++limite; 
+        ++limite;
+        bloqueio3=1;
         if(sound==1){
             let music = new Audio('files/click.mp3')
             music.play();}}
@@ -161,7 +168,8 @@ function seis(){
         document.getElementById("display").innerHTML = num+btn_valor;
         bloqueio=1;
         bloqueio2=1;
-        ++limite; 
+        ++limite;
+        bloqueio3=1;
         if(sound==1){
             let music = new Audio('files/click.mp3')
             music.play();}}
@@ -179,7 +187,8 @@ function sete(){
         document.getElementById("display").innerHTML = num+btn_valor;
         bloqueio=1;
         bloqueio2=1;
-        ++limite; 
+        ++limite;
+        bloqueio3=1;
         if(sound==1){
             let music = new Audio('files/click.mp3')
             music.play();}}
@@ -197,7 +206,8 @@ function oito(){
         document.getElementById("display").innerHTML = num+btn_valor;
         bloqueio=1;
         bloqueio2=1;
-        ++limite; 
+        ++limite;
+        bloqueio3=1;
         if(sound==1){
             let music = new Audio('files/click.mp3')
             music.play();}}
@@ -215,7 +225,8 @@ function nove(){
         document.getElementById("display").innerHTML = num+btn_valor;
         bloqueio=1;
         bloqueio2=1;
-        ++limite; 
+        ++limite;
+        bloqueio3=1;
         if(sound==1){
             let music = new Audio('files/click.mp3')
             music.play();}}
@@ -233,7 +244,8 @@ function zero(){
         document.getElementById("display").innerHTML = num+btn_valor;
         bloqueio=1;
         bloqueio2=1;
-        ++limite; 
+        ++limite;
+        bloqueio3=1;
         if(sound==1){
             let music = new Audio('files/click.mp3')
             music.play();}}
@@ -241,17 +253,20 @@ function zero(){
     
 }
 function ponto(){
-    if(limiteP<1){
+    if(limite<15){
         if(bloqueio2==1){
-            let num=document.getElementById("display").innerHTML;
-            let btn_valor=document.getElementById("ponto").value;
-            document.getElementById("display").innerHTML = num+btn_valor;
-            bloqueio=1;
-            bloqueio2=1;
-            ++limiteP; 
-            if(sound==1){
-                let music = new Audio('files/click.mp3')
-                music.play();}}}
+            if(limiteP<1){
+                if(bloqueio2==1){
+                    let num=document.getElementById("display").innerHTML;
+                    let btn_valor=document.getElementById("ponto").value;
+                    document.getElementById("display").innerHTML = num+btn_valor;
+                    bloqueio=1;
+                    bloqueio2=1;
+                    ++limiteP; 
+                    ++limite;
+                    if(sound==1){
+                        let music = new Audio('files/click.mp3')
+                        music.play();}}}}
 
     
 }
@@ -268,6 +283,8 @@ function mais(){
         bloqueio=0;
         limite=0;
         limiteP=0;
+        bloqueio2=0;
+        bloqueio3=0;
       
     }
         
@@ -289,6 +306,8 @@ function menos(){
         bloqueio=0;
         limite=0;
         limiteP=0;
+        bloqueio2=0;
+        bloqueio3=0;
       
     }
 
@@ -300,12 +319,13 @@ function mult(){
         let music = new Audio('files/click.mp3')
         music.play();}
     if (bloqueio2==1){
-   
-    num_1=parseFloat(document.getElementById("display").innerHTML);
-    operador=3;
-    bloqueio=0;
-    limite=0;
-    limiteP=0;}
+        num_1=parseFloat(document.getElementById("display").innerHTML);
+        operador=3;
+        bloqueio=0;
+        limite=0;
+        limiteP=0;
+        bloqueio2=0;
+        bloqueio3=0;}
     
  
        
@@ -316,11 +336,13 @@ function dividir(){
         let music = new Audio('files/click.mp3')
         music.play();}
     if(bloqueio2==1){
-    num_1=parseFloat(document.getElementById("display").innerHTML);
-    operador=4;
-    bloqueio=0;
-    limite=0;
-    limiteP=0;}
+        num_1=parseFloat(document.getElementById("display").innerHTML);
+        operador=4;
+        bloqueio=0;
+        limite=0;
+        limiteP=0;
+        bloqueio2=0;
+        bloqueio3=0;}
    
     
 }
@@ -342,7 +364,7 @@ function igual(){
                 bloqueio=0;
                 limite=0;
                 limiteP=0;
-                
+                bloqueio3=0;
               
                 break;
             case 2:
@@ -353,6 +375,7 @@ function igual(){
                 bloqueio=0;
                 limite=0;
                 limiteP=0;
+                bloqueio3=0;
                 break;
             case 3:
                 result=num_1*num_2;
@@ -362,6 +385,7 @@ function igual(){
                 bloqueio=0;
                 limite=0;
                 limiteP=0;
+                bloqueio3=0;
                
                 break;
             case 4:
@@ -372,6 +396,7 @@ function igual(){
                 bloqueio=0;
                 limite=0;
                 limiteP=0;
+                bloqueio3=0;
                 
                 break;
             }}
