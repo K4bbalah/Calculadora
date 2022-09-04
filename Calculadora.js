@@ -38,6 +38,10 @@ function limpar(){
     limiteP=0;
     mais_menos=false;
     bloqueio3=false;
+    bloqueio4=false;
+    bloqueio5=true;
+    maisMenos="";
+    
     if(sound){
         let music = new Audio('files/click.mp3')
         music.play();}
@@ -61,6 +65,17 @@ function MN(){
                     document.getElementById("display").innerHTML = -x;
                     mais_menos=false;
                 --limite;}
+             if (mais_menos2){
+                 let y=document.getElementById('display').innerHTML;
+                 document.getElementById("display2").innerHTML = maisMenos+y;
+                 mais_menos2=false;
+             }
+            else{
+                let y=document.getElementById('display').innerHTML;
+                document.getElementById("display2").innerHTML = maisMenos+y;
+                mais_menos2=true;
+
+            }
             }}
 }
  
@@ -439,43 +454,64 @@ function igual(){
                 result=num_1+num_2;
                 let res=String(result);
                 document.getElementById("display").innerHTML = res.substr(0,15);
+                let num=document.getElementById("display2").innerHTML;
+                document.getElementById("display2").innerHTML = num+'='+res.substring(0,15);
                 operador=0;
                 bloqueio=false;
                 limite=0;
                 limiteP=0;
                 bloqueio3=false;
+                bloqueio4=false;
+                maisMenos="";
+                bloqueio5=true;
               
                 break;
             case 2:
                 result=num_1-num_2;
                 let res1=String(result);
                 document.getElementById("display").innerHTML = res1.substr(0,15);
+                let num1=document.getElementById("display2").innerHTML;
+                document.getElementById("display2").innerHTML = num1+'='+res1.substring(0,15);
                 operador=0;
                 bloqueio=false;
                 limite=0;
                 limiteP=0;
                 bloqueio3=false;
+                bloqueio4=false;
+                maisMenos="";
+                bloqueio5=true;
+                
                 break;
             case 3:
                 result=num_1*num_2;
                 let res2=String(result);
                 document.getElementById("display").innerHTML = res2.substr(0,15);
+                let num2=document.getElementById("display2").innerHTML;
+                document.getElementById("display2").innerHTML = num2+'='+res2.substring(0,15);
                 operador=0;
                 bloqueio=false;
                 limite=0;
                 limiteP=0;
                 bloqueio3=false;
+                bloqueio4=false;
+                maisMenos="";
+                bloqueio5=true;
                
                 break;
             case 4:
                 result=num_1/num_2;
                 let res3=String(result);
                 document.getElementById("display").innerHTML = res3.substr(0,15);
+                let num3=document.getElementById("display2").innerHTML;
+                document.getElementById("display2").innerHTML = num3+'='+res3.substring(0,15);
                 operador=0;
                 bloqueio=false;
                 limite=0;
                 limiteP=0;
                 bloqueio3=false;
+                bloqueio4=false;
+                maisMenos="";
+                bloqueio5=true;
                 
                 break;
             }}
