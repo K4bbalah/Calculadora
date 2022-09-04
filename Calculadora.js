@@ -26,8 +26,9 @@ function som(){
     }
 }
 function limpar(){
-
+    let limpar2 ="";
     let limpar="0";
+    document.getElementById("display2").innerHTML =limpar2;
     document.getElementById("display").innerHTML =limpar;
     operador=0;
     num_1=0;
