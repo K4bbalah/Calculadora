@@ -8,6 +8,10 @@ var limiteP=0;
 var sound=false;
 var mais_menos=false;
 var bloqueio3=false;
+var bloqueio4=false;
+var bloqueio5=true;
+var maisMenos="";
+var mais_menos2=true;
 
 
 function som(){
@@ -69,6 +73,13 @@ function um(){
         let num=document.getElementById("display").innerHTML;
         let btn_valor=document.getElementById("um").value;
         document.getElementById("display").innerHTML = num+btn_valor;
+        if(bloqueio4==false){
+            let dis2="";
+            document.getElementById("display2").innerHTML = dis2;
+            bloqueio4=true;
+        }
+        let num2=document.getElementById("display2").innerHTML;
+        document.getElementById("display2").innerHTML = num2+btn_valor;
         bloqueio=true;
         bloqueio2=true;
         ++limite;
@@ -89,6 +100,13 @@ function dois(){
         let num=document.getElementById("display").innerHTML;
         let btn_valor=document.getElementById("dois").value;
         document.getElementById("display").innerHTML = num+btn_valor;
+        if(bloqueio4==false){
+            let dis2="";
+            document.getElementById("display2").innerHTML = dis2;
+            bloqueio4=true;
+         }
+        let num2=document.getElementById("display2").innerHTML;
+        document.getElementById("display2").innerHTML = num2+btn_valor;
         bloqueio=true;
         bloqueio2=true;
         ++limite;
@@ -108,6 +126,13 @@ function tres(){
         let num=document.getElementById("display").innerHTML;
         let btn_valor=document.getElementById("tres").value;
         document.getElementById("display").innerHTML = num+btn_valor;
+        if(bloqueio4==false){
+            let dis2="";
+            document.getElementById("display2").innerHTML = dis2;
+            bloqueio4=true;
+         }
+        let num2=document.getElementById("display2").innerHTML;
+        document.getElementById("display2").innerHTML = num2+btn_valor;
         bloqueio=true;
         bloqueio2=true;
         ++limite;
@@ -127,6 +152,13 @@ function quatro(){
         let num=document.getElementById("display").innerHTML;
         let btn_valor=document.getElementById("quatro").value;
         document.getElementById("display").innerHTML = num+btn_valor;
+        if(bloqueio4==false){
+            let dis2="";
+            document.getElementById("display2").innerHTML = dis2;
+            bloqueio4=true;
+         }
+        let num2=document.getElementById("display2").innerHTML;
+        document.getElementById("display2").innerHTML = num2+btn_valor;
         bloqueio=true;
         bloqueio2=true;
         ++limite;
@@ -146,6 +178,13 @@ function cinco(){
         let num=document.getElementById("display").innerHTML;
         let btn_valor=document.getElementById("cinco").value;
         document.getElementById("display").innerHTML = num+btn_valor;
+        if(bloqueio4==false){
+            let dis2="";
+            document.getElementById("display2").innerHTML = dis2;
+            bloqueio4=true;
+         }
+        let num2=document.getElementById("display2").innerHTML;
+        document.getElementById("display2").innerHTML = num2+btn_valor;
         bloqueio=true;
         bloqueio2=true;
         ++limite;
@@ -165,6 +204,13 @@ function seis(){
         let num=document.getElementById("display").innerHTML;
         let btn_valor=document.getElementById("seis").value;
         document.getElementById("display").innerHTML = num+btn_valor;
+        if(bloqueio4==false){
+            let dis2="";
+            document.getElementById("display2").innerHTML = dis2;
+            bloqueio4=true;
+         }
+        let num2=document.getElementById("display2").innerHTML;
+        document.getElementById("display2").innerHTML = num2+btn_valor;
         bloqueio=true;
         bloqueio2=true;
         ++limite;
@@ -184,6 +230,13 @@ function sete(){
         let num=document.getElementById("display").innerHTML;
         let btn_valor=document.getElementById("sete").value;
         document.getElementById("display").innerHTML = num+btn_valor;
+        if(bloqueio4==false){
+            let dis2="";
+            document.getElementById("display2").innerHTML = dis2;
+            bloqueio4=true;
+         }
+        let num2=document.getElementById("display2").innerHTML;
+        document.getElementById("display2").innerHTML = num2+btn_valor;
         bloqueio=true;
         bloqueio2=true;
         ++limite;
@@ -203,6 +256,13 @@ function oito(){
         let num=document.getElementById("display").innerHTML;
         let btn_valor=document.getElementById("oito").value;
         document.getElementById("display").innerHTML = num+btn_valor;
+        if(bloqueio4==false){
+            let dis2="";
+            document.getElementById("display2").innerHTML = dis2;
+            bloqueio4=true;
+         }
+        let num2=document.getElementById("display2").innerHTML;
+        document.getElementById("display2").innerHTML = num2+btn_valor;
         bloqueio=true;
         bloqueio2=true;
         ++limite;
@@ -222,6 +282,13 @@ function nove(){
         let num=document.getElementById("display").innerHTML;
         let btn_valor=document.getElementById("nove").value;
         document.getElementById("display").innerHTML = num+btn_valor;
+        if(bloqueio4==false){
+            let dis2="";
+            document.getElementById("display2").innerHTML = dis2;
+            bloqueio4=true;
+         }
+        let num2=document.getElementById("display2").innerHTML;
+        document.getElementById("display2").innerHTML = num2+btn_valor;
         bloqueio=true;
         bloqueio2=true;
         ++limite;
@@ -241,6 +308,13 @@ function zero(){
         let num=document.getElementById("display").innerHTML;
         let btn_valor=document.getElementById("zero").value;
         document.getElementById("display").innerHTML = num+btn_valor;
+        if(bloqueio4==false){
+            let dis2="";
+            document.getElementById("display2").innerHTML = dis2;
+            bloqueio4=true;
+         }
+        let num2=document.getElementById("display2").innerHTML;
+        document.getElementById("display2").innerHTML = num2+btn_valor;
         bloqueio=true;
         bloqueio2=true;
         ++limite;
@@ -258,12 +332,19 @@ function ponto(){
                     let num=document.getElementById("display").innerHTML;
                     let btn_valor=document.getElementById("ponto").value;
                     document.getElementById("display").innerHTML = num+btn_valor;
-                    bloqueio=true;
-                    bloqueio2=true;
-                    ++limiteP; 
-                    ++limite;
-                    if(sound){
-                        let music = new Audio('files/click.mp3')
+                if(bloqueio4==false){
+                    let dis2="";
+                    document.getElementById("display2").innerHTML = dis2;
+                    bloqueio4=true;
+                }
+                let num2=document.getElementById("display2").innerHTML;
+                document.getElementById("display2").innerHTML = num2+btn_valor;
+                bloqueio=true;
+                bloqueio2=true;
+                ++limiteP; 
+                ++limite;
+                if(sound){
+                    let music = new Audio('files/click.mp3')
                         music.play();}}}}
 
     
