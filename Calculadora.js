@@ -435,7 +435,9 @@ function mult(){
               limite=0;
               limiteP=0;
               bloqueio2=false;
-              bloqueio3=false;}}
+              bloqueio3=false;
+              bloqueio4=true;
+              bloqueio5=false;}}
     
  
        
