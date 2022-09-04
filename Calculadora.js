@@ -372,13 +372,19 @@ function mais(){
         let music = new Audio('files/click.mp3')
         music.play();}
     if (bloqueio2){
-        num_1=parseFloat(document.getElementById("display").innerHTML);
-        operador=1;
-        bloqueio=false;
-        limite=0;
-        limiteP=0;
-        bloqueio2=false;
-        bloqueio3=false;
+          if(bloqueio5){
+              num_1=parseFloat(document.getElementById("display").innerHTML);
+              let numero=String(num_1);
+              maisMenos=numero+'+';
+              document.getElementById("display2").innerHTML = maisMenos;
+              operador=1;
+              bloqueio=false;
+              limite=0;
+              limiteP=0;
+              bloqueio2=false;
+              bloqueio3=false;
+              bloqueio4=true;
+              bloqueio5=false;}
       
     }
         
@@ -395,13 +401,19 @@ function menos(){
         let music = new Audio('files/click.mp3')
         music.play();}
     if (bloqueio2){
-        num_1=parseFloat(document.getElementById("display").innerHTML);
-        operador=2;
-        bloqueio=false;
-        limite=0;
-        limiteP=0;
-        bloqueio2=false;
-        bloqueio3=false;
+          if(bloqueio5){
+              num_1=parseFloat(document.getElementById("display").innerHTML);
+              let numero=String(num_1);
+              maisMenos=numero+'-';
+              document.getElementById("display2").innerHTML = maisMenos;
+              operador=2;
+              bloqueio=false;
+              limite=0;
+              limiteP=0;
+              bloqueio2=false;
+              bloqueio3=false;
+              bloqueio4=true;
+              bloqueio5=false;}
       
     }
 
@@ -413,13 +425,17 @@ function mult(){
         let music = new Audio('files/click.mp3')
         music.play();}
     if (bloqueio2){
-        num_1=parseFloat(document.getElementById("display").innerHTML);
-        operador=3;
-        bloqueio=false;
-        limite=0;
-        limiteP=0;
-        bloqueio2=false;
-        bloqueio3=false;}
+          if(bloqueio5){
+              num_1=parseFloat(document.getElementById("display").innerHTML);
+              let numero=String(num_1);
+              maisMenos=numero+'x';
+              document.getElementById("display2").innerHTML = maisMenos;
+              operador=3;
+              bloqueio=false;
+              limite=0;
+              limiteP=0;
+              bloqueio2=false;
+              bloqueio3=false;}}
     
  
        
@@ -430,13 +446,21 @@ function dividir(){
         let music = new Audio('files/click.mp3')
         music.play();}
     if(bloqueio2){
-        num_1=parseFloat(document.getElementById("display").innerHTML);
-        operador=4;
-        bloqueio=false;
-        limite=0;
-        limiteP=0;
-        bloqueio2=false;
-        bloqueio3=false;}
+          if(bloqueio5){
+              num_1=parseFloat(document.getElementById("display").innerHTML);
+              let numero=String(num_1);
+              maisMenos=numero+'/';
+              document.getElementById("display2").innerHTML = maisMenos;
+              operador=4;
+              bloqueio=false;
+              limite=0;
+              limiteP=0;
+              bloqueio2=false;
+              bloqueio3=false;
+              bloqueio4=true;
+              bloqueio5=false;}
+    
+    }
    
     
 }
