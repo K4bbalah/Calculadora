@@ -551,5 +551,109 @@ function igual(){
     
 }
 
+addEventListener('keydown',(ev)=>{
+
+    switch(ev.keyCode){
+
+        case 49:
+            um();
+            break;
+        case 50:
+            dois();
+            break;
+        case 51:
+            tres();
+            break;
+        case 52:
+            quatro();
+            break;
+        case 53:
+            cinco();
+            break;
+        case 54:
+            seis();
+            break;
+        case 55:
+           sete();
+            break;
+        case 56:
+            oito();
+            break;
+        case 57:
+            nove();
+            break;
+        case 48:
+            zero();
+            break;
+        
+        case 97:
+            um();
+            break;
+        case 98:
+            dois();
+            break;
+        case 99:
+            tres();
+            break;
+        case 100:
+            quatro();
+            break;
+        case 101:
+            cinco();
+            break;
+        case 102:
+            seis();
+            break;
+        case 103:
+            sete();
+            break;
+        case 104:
+            oito();
+            break;
+        case 105:
+            nove();
+            break;
+        case 96:
+            zero();
+            break;
+        case 107:
+            mais();
+            break;
+        case 109:
+            menos();
+            break;
+        case 106:
+            mult();
+            break;
+        case 111:
+            dividir();
+            break;
+        case 13:
+            igual();
+            break;
+        case 194:
+            ponto();
+            break;
+        case 190:
+            ponto();
+            break;
+        case 67:
+            limpar();
+            break;
+        case 8:
+            limpar();
+            break;
+        
+        
+
+
+
+    }
+
+
+
+
+})
+
 
 
